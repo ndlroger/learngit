@@ -12,3 +12,9 @@ Git学习笔记
                             一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
 							一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
 10,git rm xx.txt    //从库中删除某一文件，该操作只删除该文件最新版本，之前的版本可以通过git reset回退找回，但是commit之后的内容无法找回
+11,ssh-keygen -t rsa -C "youremail@example.com"   //创建github远程库，需要先生成SSH key  然后将公钥传递到github上，才能将本地的Git内容与github相连
+12,git remote add origin https://github.com/ndlroger/xxx.git //默认使用HTTPS创建连接  origin代表远程库
+   git push -u origin master          //第一次上传时使用-u参数，将master分支的所有内容上传
+13,git remote add origin git@github.com:ndlroger/xxx.git  //使用ssh连接时命令  速度快  不用每次都输密码  但是在某些只开放http端口的公司内部就无法使用
+14,git push origin master    //平时上传的命令   
+15,git clone https://github.com/ndlroger/xxx.git   //从github上克隆库到本地
