@@ -3,4 +3,4 @@ git is a version contral system
 this is my first time use git
 
 
-创建分支方便快捷
+创建分支方便&快捷
