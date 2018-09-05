@@ -29,3 +29,4 @@ master（主分支）
   git checkout -b <name>   //创建并切换到dev分支，相当于执行上面两条命令
 2,git branch             //查看库中所有分支，正在进行的分支前有"*"号标识
 3,git merge <name>       //将某一个分支合并到当前分支
+4,git branch -d <name>     //删除某个分支，可以删除的前提是该分支已经被合并，否则需要使用-D参数删除
