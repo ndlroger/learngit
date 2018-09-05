@@ -4,3 +4,4 @@ this is my first time use git
 
 
 test
+测试分支合并
