@@ -15,4 +15,4 @@ this is my first time use git
 9,git checkout -- xxx.txt   //意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
                             一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
 							一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
-10,git rm xx.txt    //从库中删除某一文件，该操作只删除该文件最新版本，之前的版本可以通过git reset回退找回
+10,git rm xx.txt    //从库中删除某一文件，该操作只删除该文件最新版本，之前的版本可以通过git reset回退找回，但是commit之后的内容无法找回
