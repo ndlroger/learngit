@@ -50,22 +50,19 @@ bug分支
 6,git rebase    //操作可以把本地未push的分叉提交历史整理成直线
 ==================================================================================================================================================================
 标签管理
-1,git tag <name>    //向当前commit添加标签
-2,git tag           //查看所有标签
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1,git tag <tagname>             //向当前commit添加标签
+2,git tag                        //查看所有标签
+3,git tag <tagname> commit_id  //向指定commit添加标签
+4,git show <tagname>           //查看指定标签的内容
+5,git push origin <tagname>     //向远程推送一个指定本地标签
+6,git push origin --tags        //推送所有未推送的标签
+7,git tag -d <tagname>         //删除指定标签，仅能删除本地标签
+8,git push origin :refs/tags/<tagname>   //删除一个远程标签
+==================================================================================================================================================================
+自定义Git
+1,git config --globle  xxx       //全局设置变量配置   例如git config --global color.ui true配置多颜色显示
+2,git config --system  xxx      //系统设置变量
+3,.gitignore                  //配置.gitignore文件可以控制git忽略某些不需要追踪的文件，比如编译生成的文件、缩略图等等
+4, git config --global alias.st status   //配置别名，可以用简写替代长句
+例如:git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+ //变态好用查看log语句
